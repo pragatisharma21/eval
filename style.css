@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: #333;
+    color:#fff;
+    padding:1rem;
+    text-align:center;
+
+
+}
+.search-bar{
+    margin-top: 1rem;
+    color: black;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.main-content{
+    padding: 1rem;
+}
+.movie-grid {
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: center;
+}
+.movie-card {
+    width: 200px;
+    padding : 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px ;
+    cursor:pointer;
+}
+.thumbnail {
+    width: 100%;
+    border-radius: 8px;
+}
+.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.info {
+    color: #555;
+    margin: 0.5rem 0;
+
+}
+.pagination {
+    margin-top: 1rem;
+    text-align: center;
+}
+.page-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border:none;
+    background-color: #333;
+    color:#fff;
+    border-radius: 5px;
+    cursor:pointer
+
+}
+.page-btn::hover {
+    background-color: #555;
+}
+.modal {
+    display: none;
+    position:fixed;
+    top:50%;
+    transform:translate(-50%, -50%);
+    width:80%;
+    max-width:500px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px;
+    border-radius: 8px;
+    z-index:1000;
+    padding:2rem;
+
+}
+.modal-content {
+    position:relative
+}
+.close {
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie streaming platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Movie Platfrom</h1>
+        <input type = "text" class="search-bar" placeholder="Search for Movies">
+        <button>Search</button>
+
+    </header>
+    <main class=" main-content">
+        <div class="movie-grid"> 
+            <div class="movie-card" onclick="openModal('Movie Title 1')">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/61da8438155793.57575971afe13.jpg" alt="movie1" class="thumbnail">
+                <h3 class="title">Monster Mouse</h3>
+                <p class="info">Rating 4.2</p>
+                <p class="info">Release Date:2024-12-12</p>
+                
+            </div>
+            <div class="movie-card" onclick="openModal('Movie Title 1')">
+                <img src=https://m.media-amazon.com/images/M/MV5BMTA1NmUxYzItZmVmNy00YmQxLTk4Y2UtZjVkMWUwMWQ5N2IxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg alt="movie1" class="thumbnail">
+                <h3 class="title">Stree 2</h3>
+                <p class="info">Rating 4.2</p>
+                <p class="info">Release Date:2024-12-12</p>
+                
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="page-btn">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+        </div>
+
+    </main>
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Movie Title</h2>
+            <p><strong>Director</strong>Sample Director</p>
+            <p><strong>Cast:</strong>Sample Cast</p>
+            <p><strong>Duration</strong>120 Min</p>
+            <p><strong>Rating</strong>4.5</p>
+            <p><strong>Tags:</strong>Comedy</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+   
+</body>
+</html>
